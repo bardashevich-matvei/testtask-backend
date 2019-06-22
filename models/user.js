@@ -4,6 +4,6 @@ exports.user = orm.define('user', {
     iduser: {type: 'serial', key: true},
     firstname: String,
     lastname: String,
-    image: String,
-    pdf: String
+    image: Buffer,
+    pdf: Buffer
 });
