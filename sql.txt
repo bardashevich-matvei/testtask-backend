@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS `backend`.`user` (
+  `iduser` INT(11) NOT NULL AUTO_INCREMENT,
+  `firstname` VARCHAR(45) NOT NULL,
+  `lastname` VARCHAR(45) NOT NULL,
+  `image` BLOB NOT NULL,
+  `pdf` BLOB NULL DEFAULT NULL,
+  PRIMARY KEY (`iduser`))
+ENGINE = InnoDB
+AUTO_INCREMENT = 4
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci
